@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" class="rel">
+    <title>Document</title>
+</head>
+<body>
+    <section class = 'flex justifyContent alignItems column'>
+    <h1>Richard's MVC Lecture</h1>
+
+
+    <div class="flex code">
+        <i class="fa-solid fa-arrow-left" id = 'left'></i>
+        <article class="slide1 flex column alignItems" id = 'MVC'>
+            <h2>What is a MVC?</h2>
+            <li>It is a way to separate different parts of your backend code</li>
+            <li>It does this by categorizing them into four different categories: </li>
+            <li>Routers, Controllers, Models, Views</li>
+        </article>
+
+        <div class="slide flex presentation hidden">
+            <ul class="flex folders column">
+                <li class = 'flex' id = 'routerFolder'><h2 class = 'routerh2'>Routers</h2><img src = 'folder.png' alt = 'folder icon'></li>
+                <li class = 'flex' id = 'controllerFolder'><h2 class = 'controllerh2'>Controllers</h2><img src = 'folder.png' alt = 'folder icon'></li>
+                <li class = 'flex' id = 'modelFolder'><h2 class = 'modelh2'>Models</h2><img src = 'folder.png' alt = 'folder icon'></li>
+                <li class = 'flex' id = 'viewFolder'><h2 class = 'viewh2'>Views</h2><img src = 'folder.png' alt = 'folder icon'></li>
+            </ul>
+
+            <article class="slide2 flex column alignItems hidden select" id = 'Routers'>
+                <h2 class="flex justifyContent">Routers</h2>
+                <li>Hears the /GET request that the client makes</li>
+                <li>Looks for the controller respective to the /GET request</li>
+                <li>Responds back to the client with that controller</li>
+            </article>
+
+            <article class="slide3 flex column alignItems hidden select" id = 'Controllers'>
+                <h2 class="flex justifyContent">Controllers</h2>
+                <li>Is told by the Routers what to do</li>
+                <li>Tells the Views what to show to the client</li>
+                <li>Tells the Models what to do with the data</li>
+                <li>Responds back to the Routers with the updated Views and Models</li>
+            </article>
+
+            <article class="slide4 flex column alignItems hidden select" id = 'Models'>
+                <h2 class="flex justifyContent">Models</h2>
+                <li>Is told by the Controllers what to do with the data</li>
+                <li>Decides what to send to the data</li>
+                <li>Responds back to the Controllers with the updated data</li>
+            </article>
+
+            <article class="slide5 flex column alignItems hidden select" id = 'Views'>
+                <h2 class="flex justifyContent">Views</h2>
+                <li>Is told by the Controllers what to show to the Client</li>
+                <li>Shows the website content, styles, and actions</li>
+                <li>Responds back to the Controllers with the updated HTML/CSS/JS</li>
+            </article>
+
+            <article class="slide6 flex column alignItems hidden select" id = 'Pros'>
+                <h2 class="flex justifyContent">Pros of using MVC model:</h2>
+                <li>Keeps the code clean</li>
+                <li>Keeps the code and files organized</li>
+                <li>Makes it significantly easier to work in a team</li>
+            </article>
+
+
+            <article class="slide7 flex column alignItems hidden select" id = 'mongoose'>
+                <h2 class="flex justifyContent">What is Mongoose?</h2>
+                <li>It helps connect our server to our database, like MongodB</li>
+                <li>Maintains data relationship between the server and database</li>
+                <li>Works with schemas, which are just a map of keys and types, like a blueprint</li>
+            </article>
+
+            <article class="slide8 flex column alignItems hidden select" id = 'end'>
+                <h2 class="flex justifyContent">The End!</h2>
+                <img src = 'illya.gif' alt = 'happy illya clapping her hands' class = 'illya'>
+                <audio autoplay  class = 'audio' type = 'audio/mp3' controls>
+            </article>
+        </div>
+        <i class="fa-solid fa-arrow-right" id = 'right'></i>
+
+    </div>
+
+    </section>
+    <script src="https://kit.fontawesome.com/d0e0071c1c.js" crossorigin="anonymous"></script>
+    <script src='js/main.js'></script>
+</body>
+</html>
