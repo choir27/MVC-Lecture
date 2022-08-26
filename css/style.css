@@ -22,9 +22,10 @@ html{
     flex-direction: column;
 }
 
-h1, p, li, pre, code{
+h1, p, li, pre, code, label{
     font-size: 5rem;
 }
+
 
 
 img{
@@ -38,7 +39,16 @@ div, html, body, h2, section, .code{
 }
 
 section{
+    height: 100%;
+}
+
+body{
     height: 100vh;
+}
+
+section, div{
+    padding-bottom: 0rem;
+    margin-bottom: 0rem;
 }
 
 .presentation, section, .code, li, #MVC{
@@ -57,6 +67,10 @@ li{
 
 .folders li{
     padding: 2rem;
+}
+
+.folders li:hover{
+    cursor: pointer;
 }
 
 .folders{
@@ -100,8 +114,12 @@ i, #MVC h2, #MVC li, .folders li{
     color: white;
 }
 
+.slide{
+    width: 100%;
+}
+
 .illya{
-    width:50%;
+    width:25%;
     margin-bottom: 2rem;
 }
 
@@ -112,6 +130,7 @@ width: 60%;
 .folders, li, h2, article{
 border-radius: 5px;
 }
+
 
 
 .folders, li, h2, img, audio{

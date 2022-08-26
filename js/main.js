@@ -6,38 +6,43 @@ let slide = 0
 
 function goRight(){
 let arr = []
-for(let i = 1; i<9; i++){
+for(let i = 1; i<15; i++){
 arr.push(`.slide${i}`)
 }
 
-if(slide !== 6 && slide !== 7){
-    document.querySelector('.slide1').classList.add('hidden')
-    document.querySelector('.slide2').classList.add('hidden')
-    document.querySelector('.slide3').classList.add('hidden')
-    document.querySelector('.slide4').classList.add('hidden')
-    document.querySelector('.slide5').classList.add('hidden')
-    document.querySelector('.slide6').classList.add('hidden')
-    document.querySelector('.slide7').classList.add('hidden')
-    document.querySelector('.slide8').classList.add('hidden')
-
+if(slide !== 6 && slide !== 7 && slide < 7){
+    for(let i = 1; i< 9;i++){
+        document.querySelector(`.slide${i}`).classList.add('hidden')
+    }
  document.querySelector(`.slide`).classList.remove('hidden')
  slide++
 document.querySelector(`${arr[slide]}`).classList.remove('hidden')
 addSelect()
 }else if(slide === 6){
-    document.querySelector('.slide1').classList.add('hidden')
-    document.querySelector('.slide2').classList.add('hidden')
-    document.querySelector('.slide3').classList.add('hidden')
-    document.querySelector('.slide4').classList.add('hidden')
-    document.querySelector('.slide5').classList.add('hidden')
-    document.querySelector('.slide6').classList.add('hidden')
-    document.querySelector('.slide7').classList.add('hidden')
-    document.querySelector('.slide8').classList.add('hidden')
-document.querySelector(`${arr[slide]}`).classList.add('hidden')
+    document.querySelector('#left').classList.add('hidden')
+    document.querySelector(`.folders`).classList.add('hidden')
+    for(let i = 1; i< 9;i++){
+        document.querySelector(`.slide${i}`).classList.add('hidden')
+    }
 slide++
 document.querySelector(`${arr[slide]}`).classList.remove('hidden')
-document.querySelector('.audio').setAttribute('src','like.mp3')
 addSelect()
+}else if(slide >= 7 && slide !== 13 && slide !== 12){
+    for(let i = 7; i< 15;i++){
+        document.querySelector(`.slide${i}`).classList.add('hidden')
+    }
+    console.log(slide)
+    slide++
+    document.querySelector(`${arr[slide]}`).classList.remove('hidden')
+
+}else{
+    document.querySelector('#right').classList.add('hidden')
+    for(let i = 7; i< 15;i++){
+        document.querySelector(`.slide${i}`).classList.add('hidden')
+    }
+    slide++
+    document.querySelector(`${arr[slide]}`).classList.remove('hidden')
+    document.querySelector('.audio').setAttribute('src','like.mp3')
 }
 
 
