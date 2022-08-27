@@ -26,6 +26,15 @@ h1, p, li, pre, code, label{
     font-size: 5rem;
 }
 
+.slide div{
+    width: 80%;
+}
+
+.slide div input{
+    font-size: 10rem;
+    width: 30%;
+}
+
 
 
 img{

@@ -6,7 +6,7 @@ let slide = 0
 
 function goRight(){
 let arr = []
-for(let i = 1; i<15; i++){
+for(let i = 1; i<16; i++){
 arr.push(`.slide${i}`)
 }
 
@@ -27,8 +27,8 @@ addSelect()
 slide++
 document.querySelector(`${arr[slide]}`).classList.remove('hidden')
 addSelect()
-}else if(slide >= 7 && slide !== 13 && slide !== 12){
-    for(let i = 7; i< 15;i++){
+}else if(slide >= 7 && slide !== 14 && slide !== 13){
+    for(let i = 7; i< 16;i++){
         document.querySelector(`.slide${i}`).classList.add('hidden')
     }
     console.log(slide)
@@ -37,7 +37,7 @@ addSelect()
 
 }else{
     document.querySelector('#right').classList.add('hidden')
-    for(let i = 7; i< 15;i++){
+    for(let i = 7; i< 16;i++){
         document.querySelector(`.slide${i}`).classList.add('hidden')
     }
     slide++
