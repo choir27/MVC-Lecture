@@ -142,7 +142,7 @@ i:hover{
 }
 
 article, .presentation{
-    padding: 2rem;
+    padding: 2rem 2rem 0rem 2rem;
 }
 
 i, #MVC h2, #MVC li, .folders li{
