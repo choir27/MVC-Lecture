@@ -55,19 +55,45 @@ body{
     height: 100vh;
 }
 
+h1{
+    color: white;
+}
+
 section, div{
     padding-bottom: 0rem;
     margin-bottom: 0rem;
 }
 
-.presentation, section, .code, li, #MVC{
+.presentation, li, #MVC{
 width: 100%;
 }
 
 .code{
+    padding: 2rem;
+    align-items: flex-start;
     height: 100%;
 }
 
+button{
+    margin: 0rem 2rem;
+    text-transform: capitalize;
+    color: white;
+    background: none;
+    padding: .5rem 1rem;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 3rem;
+}
+
+.buttons{
+    background: black;
+    width: 100%;
+}
+
+button:hover{
+    cursor: pointer;
+    background: rgb(230, 204, 204);
+}
 
 li{
     text-align: center;
@@ -124,6 +150,7 @@ i, #MVC h2, #MVC li, .folders li{
 }
 
 .slide{
+    height: 90%;
     width: 100%;
 }
 
@@ -132,8 +159,20 @@ i, #MVC h2, #MVC li, .folders li{
     margin-bottom: 2rem;
 }
 
-article{
-width: 60%;
+#MVC{
+    height: 100%;
+    background: white;
+}
+
+#MVC h2, #MVC li{
+    color: black;
+}
+
+article, section, .presentation{
+width: 100%;
+}
+.code{
+    width: 97.4%;
 }
 
 .folders, li, h2, article{
